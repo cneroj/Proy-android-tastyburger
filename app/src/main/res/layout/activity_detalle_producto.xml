@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.alumno.proytastyburger.DetalleProductoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:background="@drawable/back"
+                android:layout_centerVertical="true"
+                android:id="@+id/button"
+                android:onClick="onClickRetroceder"/>
+
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/button"
+                android:fontFamily="@font/nabila"
+                android:text="Detalle Producto"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.alumno.proytastyburger.Image.ResizableImageView
+            android:id="@+id/imgFotoProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionName="productos" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtNombreProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/monfibold"
+            android:text="Nombre"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtDescripcionProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/monfu"
+            android:text="Nombre"
+            android:layout_marginRight="52dp"
+            android:layout_marginLeft="52dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtPrecioProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/monfu"
+            android:text="Nombre"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+</LinearLayout>

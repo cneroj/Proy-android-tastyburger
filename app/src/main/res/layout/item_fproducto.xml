@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.alumno.proytastyburger.Image.ResizableImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgFotoProducto"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtIdProducto"
+            android:visibility="gone"
+            android:text="id"/>
+
+
+        <TextView
+                android:id="@+id/txtNomProducto"
+                android:layout_width="450px"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgFotoProducto"
+                android:paddingBottom="10dp"
+                android:paddingStart="15dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/ubuntu"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+                android:background="@drawable/boton_bordes"
+                android:textColor="@color/colorWhite"
+                android:layout_toEndOf="@+id/txtIdProducto"
+                android:text="nombre" />
+
+
+
+        <TextView
+            android:id="@+id/txtPrecioProducto"
+            android:layout_width="210px"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtNomProducto"
+            android:layout_alignBottom="@+id/txtNomProducto"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="20dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/ubuntu"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/boton_border_enblanco"
+            android:textColor="@color/colorAccent"
+            android:text="20.00"
+            android:visibility="visible"
+            android:textAlignment="textEnd"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

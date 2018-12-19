@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alumno.proytastyburger.MainActivity"
+    android:background="@drawable/my_bg"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="66dp"
+            android:src="@drawable/logo_eat_it"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nabila"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt mauris enim, non dignissim urna pretium vitae. Maecenas quis auctor mi. Pellentesque mattis feugiat felis, et finibus turpis vulputate ac. Maecenas sit amet erat erat. "
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textColor="#FFFF"
+            android:id="@+id/textView" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnRegistrar"
+            android:layout_alignBottom="@+id/btnRegistrar"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/boton_redondo"
+            android:text="Ingresar"
+            android:onClick="onClickIngresar"/>
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/boton_redondo2"
+            android:text="Registrarse"
+            android:onClick="onClickRegistrar"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+

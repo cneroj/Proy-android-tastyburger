@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:layout_margin="18dp"
+    tools:context="com.example.alumno.proytastyburger.Fragments.InicioFragment">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eat it"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/nabila"
+        android:textColor="@color/colorAccent"/>
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="200dp"
+        android:id="@+id/vflipper">
+    </ViewFlipper>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:fontFamily="@font/tipoaa"
+
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt mattis libero vitae pretium. In sodales bibendum tellus, non sollicitudin risus efficitur vitae. Aenean eu est eu tortor laoreet feugiat a et ex. Vivamus vulputate dapibus lacus ac fermentum. Praesent euismod faucibus condimentum. Sed ac malesuada urna. Mauris iaculis molestie dolor."/>
+
+
+
+</LinearLayout>

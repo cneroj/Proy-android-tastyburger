@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.alumno.proytastyburger.ProductosActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:background="@drawable/back"
+                android:layout_centerVertical="true"
+                android:id="@+id/button"
+                android:onClick="onClickRetroceder"/>
+
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/button"
+                android:fontFamily="@font/nabila"
+                android:text="Producto"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="productos"
+        android:id="@+id/lvProductos">
+    </ListView>
+</LinearLayout>
